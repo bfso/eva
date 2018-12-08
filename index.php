@@ -1,2 +1,2 @@
 <?php
-echo "Hallo Welt";
+require_once("routes/web.php");
