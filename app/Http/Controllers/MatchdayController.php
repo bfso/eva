@@ -11,8 +11,12 @@ class MatchdayController
             return $this->html;
       }
 
+      /**
+       * Show a list with all resources
+       */
       public function index()
       {
-            $this->html = "Liste mit Matchdays";
+            $matchdays = ['MD1','MD2'];
+            $this->html = view('matchday.index',['matchdays'=>$matchdays]);
       }
 }
